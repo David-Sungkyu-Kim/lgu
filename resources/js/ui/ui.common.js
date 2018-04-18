@@ -601,8 +601,3 @@ lgUi.view.global.prototype = {
 };
 var oLgUi = new lgUi.view.global();
 
-$('.header_btn_left').click(function(){
-    //history back
-
-    history.back()
-}); //씬 연결 확인시 어려움이 있어 추가해두었습니다. 실 개발시 제거 부탁 드립니다. - 박주현
