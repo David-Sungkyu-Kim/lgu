@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+</head>
+<body>
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_left _press"><i class="sprite sprite_common sprite_icon_pre"></i>
+        </a>
+        <span>가족 결합 현황</span>
+    </div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents wrap_main">
+    <div class="section_contents">
+        <div class="area_family_connect">
+            <p>U+ 가족 무한 사랑</p>
+            <div class="family_list">
+                <p>가족사랑 데이터 <a href="#" class="_press"><span>나눠주기</span><i class="sprite sprite_charge sprite_charge_icon_more"></i></a></p>
+
+                <div class="family_data_chart" id="_data_chart"></div>
+                <p>가족 결합 회선<span>충전/선물</span></p>
+                <ul>
+                    <li>
+                        <em>
+                            <i class="sprite sprite_page sprite_icon_face"></i>
+                            <span class="my">나</span>
+                        </em>
+                        <div class="txt">
+                            <div class="name">유*나</div>
+                            <span class="text_label label_green">자동주기 500MB</span>
+                            <div class="num">010-**83-**34</div>
+                            <div class="data_num">가족사랑 데이터 <span>200MB</span></div>
+                        </div>
+                        <a href="#" class="btn_right">
+                            <i class="sprite sprite_page sprite_page_icon_charge"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <em>
+                            <i class="sprite sprite_page sprite_icon_face_2"></i>
+                        </em>
+                        <div class="txt">
+                            <div class="name">유*비</div>
+                            <span class="text_label label_brown">대표자</span>
+                            <div class="num">010-**83-**34</div>
+                            <div class="data_num">가족사랑 데이터 <span>200MB</span></div>
+                        </div>
+                        <a href="#" class="btn_right">
+                            <i class="sprite sprite_page sprite_page_icon_gift"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <em>
+                            <i class="sprite sprite_page sprite_icon_face_2"></i>
+                        </em>
+                        <div class="txt">
+                            <div class="name">아*지</div>
+                            <div class="num">010-**83-**34</div>
+                            <div class="data_num">가족사랑 데이터 <span>200MB</span></div>
+                        </div>
+                        <a href="#" class="btn_right">
+                            <i class="sprite sprite_page sprite_page_icon_gift"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <em>
+                            <i class="sprite sprite_page sprite_icon_face_3"></i>
+                        </em>
+                        <div class="txt">
+                            <div class="name">꼬*비</div>
+                            <span class="text_label label_red">일시정지</span>
+                            <div class="num">010-**83-**34</div>
+                            <div class="data_num">가족사랑 데이터 <span>200MB</span></div>
+                        </div>
+                        <a href="#" class="btn_right btn_gift_error">
+                            선물 불가
+                        </a>
+                    </li>
+                </ul>
+                <p class="desc">* 할당된 가족 사랑 데이터 (매월 1일~말일 기준)</p>
+            </div>
+            <div class="info_list">
+                <!--disabled 클래스 추가 시 disabled됨-->
+                <div class="info _press">
+                    <i class="sprite sprite_charge sprite_icon_info_dark"></i><span>유의사항</span>
+                    <a href="#" class="_press">내용을 반드시 확인해주세요</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- // wrap_contents -->
+
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/lib/highcharts.js"></script>
+<script src="../../resources/js/lib/annotations.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+<script>
+    //더미 데이터
+    var arr = [300];
+
+    Highcharts.chart('_data_chart', {
+        chart: {
+            type: 'bar',
+            margin: [0, 0, 31, 0]
+        },
+        title: {
+            text: '',
+            style: {
+                display: 'none'
+            }
+        },
+        xAxis: {
+            categories: false,
+            labels: {
+                enabled: false
+            },
+            gridLineColor: "#e0e0e0",
+            tickWidth: 0,
+            alternateGridColor: '#e0e0e0'
+        },
+        yAxis: {
+            min: 0,
+            max: 500,
+            title: false,
+            gridLineColor: 'transparent',
+            labels: {
+                enabled: false
+            }
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        series: [{
+            name: 'data',
+            data: arr,
+            color: '#92d3cd',
+            fillColor: '#eeeeee',
+            borderColor: '#92d3cd'
+
+        }],
+        credits: {
+            enabled: false
+        },
+        allowHTML: true,
+        annotations: [{
+            labelOptions: {
+                useHTML :true,
+                format:'<div class="tooltip-marker-low">' + arr[0] + 'MB 남음' + '</div>',
+                backgroundColor: 'transparent',
+                verticalAlign: 'bottom',
+                padding:0,
+                borderWidth: 0,
+                x:-44,
+                y:30,
+                style:{
+                    fontSize:'14px'
+                }
+            },
+            labels: [{
+                point: {
+                    xAxis: 0,
+                    yAxis: 0,
+                    x: 0,
+                    y: arr[0] //data,
+                }
+            }]
+        }]
+    });
+</script>
+</body>
+</html>

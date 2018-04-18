@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/lib/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+    <style>
+    </style>
+</head>
+<body>
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_left _press"><i class="sprite sprite_common sprite_icon_pre"></i>
+        </a>
+        <span>내 데이터 나눠주기</span>
+    </div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents">
+    <div class="section_contents section_gift section_contents_bottom_btn">
+        <div class="area_num">
+            <p>
+                <em>받는 사람 </em><span>010-2000-2030</span>
+            </p>
+        </div>
+        <div class="area_gift_share">
+            <div class="data_num current">
+                <p>선물할 데이터</p>
+                <div class="num">
+                    <div class="box_select_data">
+                        <select class="select select_data">
+                            <option value="1100">1100</option>
+                            <option value="1000">1000</option>
+                            <option value="900">900</option>
+                            <option value="800">800</option>
+                            <option value="700">700</option>
+                            <option value="600">600</option>
+                            <option value="500">500</option>
+                            <option value="400">400</option>
+                            <option value="300">300</option>
+                            <option value="200">200</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                    <span>MB</span>
+                </div>
+            </div>
+            <div class="data_slider">
+                <div class="share_slider">
+
+                </div>
+            </div>
+            <div class="data_num left">
+                <p>선물 가능한 데이터</p>
+                <div class="num">
+                    <span><em class="_send">1000</em>MB</span>
+                    <span>/</span>
+                    <span><em class="_total">1200</em> MB </span>
+                </div>
+            </div>
+            <div class="desc">
+                <p>
+                    슬라이더를 위・아래로 움직여<br>
+                    선물할 데이터를 선택해주세요
+                </p>
+                <span>지금 선물하는 데이터는 2018년 3월 30일까지 사용 가능합니다</span>
+            </div>
+
+            <div class="share_check">
+                <label for="check_box1">
+                    <input type="checkbox" class="check_box check_box_sm" id="check_box1">
+                    매월 1일 자동으로 나눠주기 <span>잔여 횟수 <em>1</em>회</span>
+                </label>
+            </div>
+
+            <!--disabled 클래스 추가 시 disabled됨-->
+            <a href="#" class="info _press">
+                <i class="sprite sprite_charge sprite_icon_info_brown"></i><span>유의사항</span>
+                <p>내용을 반드시 확인해주세요</p>
+            </a>
+        </div>
+    </div>
+    <div class="section_bottom_btn">
+        <div class="btn_wrap">
+            <button class="btn btn_bottom">선물하기</button>
+        </div>
+    </div>
+</div>
+<!-- // wrap_contents -->
+
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/lib/jquery-ui.min.js"></script>
+<script src="../../resources/js/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+<script>
+    $(function() {
+
+        var oDataShare = {
+            oSharingSlider: $('.share_slider'),
+            oSelect: $('.select_data'),
+            nTotal: 1200, // 총 데이터
+            nValue: 200 // 남길 데이터
+        };
+
+        //데이터 나눠주기 슬라이더
+        oDataShare.oSharingSlider.slider({
+            orientation: 'vertical',
+            range: 'max',
+            min: 0,
+            max: oDataShare.nTotal,
+            step: 100,
+            value: oDataShare.nValue,
+            create: function () {
+                oDataShare.oSelect.val(oDataShare.nTotal - oDataShare.nValue);
+
+                $(".data_num.left .num ._total").html(oDataShare.nTotal);
+                $(".data_num.left .num ._send").html(oDataShare.nTotal - oDataShare.nValue);
+            },
+            slide: function (event, ui) {
+                if (ui.value > oDataShare.nTotal - 100) {
+                    oDataShare.oSelect.val(oDataShare.nTotal - ui.value + 100);
+                    return false;
+                } else if (ui.value < 100) {
+                    $(".data_num.left .num ._send").html(oDataShare.nTotal - ui.value - 100);
+                    return false;
+                } else {
+                    $(".data_num.current .num ._total").html(oDataShare.nTotal - ui.value);
+                    $(".data_num.left .num ._send").html(oDataShare.nTotal - ui.value);
+                    oDataShare.oSelect.val(oDataShare.nTotal - ui.value);
+                }
+
+            }
+        });
+
+        oDataShare.oSelect.on('change', function () {
+            var nValue = oDataShare.nTotal - (this.selectedIndex * 100) - 100;
+
+            oDataShare.oSharingSlider.slider("value", (this.selectedIndex) * 100 + 100);
+            $(".data_num.left .num ._send").html(nValue);
+        });
+
+    });
+</script>
+</body>
+</html>

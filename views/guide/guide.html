@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+    <style>
+        .section_header {
+            background: #f3159c;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .guide_title {
+            font-weight: bold;
+            line-height: 30px;
+            background: #eeeeee;
+            padding: 2px 10px;
+            margin-top: 5px;
+        }
+
+        .guide_contents {
+            margin-top: 5px;
+            padding: 5px 15px;
+        }
+
+        label {
+            margin-right: 25px;
+            font-size: 12px;
+        }
+
+        .select {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">UI 컴포넌트 가이드 (UI Components guide)</div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents">
+    <div class="section_contents">
+        <div class="guide_title">text_box</div>
+        <div class="guide_contents">
+            <div>
+                <input type="text" class="text_box" placeholder="가나다라마바사">
+            </div>
+            <div style="margin-top: 10px">
+                <input type="text" class="text_box" placeholder="disabled" disabled>
+            </div>
+        </div>
+
+        <div class="guide_title">text_box (검색)</div>
+        <div class="guide_contents">
+            <div>
+                <div class="search_input_box">
+                    <input type="text" class="text_box" placeholder="가나다라마바사">
+                    <!--disabled 클래스 추가 시 disabled됨-->
+                    <a href="#" class="btn_search _press">
+                        <i class="sprite sprite_form sprite_icon_search"></i>
+                    </a>
+                </div>
+            </div>
+            <div style="margin-top: 10px">
+                <div class="search_input_box bg_brown">
+                    <input type="text" class="text_box" placeholder="가나다라마바사">
+                    <!--disabled 클래스 추가 시 disabled됨-->
+                    <a href="#" class="btn_search _press">
+                        <i class="sprite sprite_form sprite_icon_search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="guide_title">textarea</div>
+        <div class="guide_contents">
+            <textarea class="textarea_box" placeholder="가나다라마바사"></textarea>
+        </div>
+
+        <div class="guide_title">select</div>
+        <div class="guide_contents">
+            <div class="select">
+                <select>
+                    <option>select</option>
+                    <option>select</option>
+                    <option>select</option>
+                    <option>select</option>
+                </select>
+            </div>
+            <div class="select select_line">
+                <select>
+                    <option>select_line</option>
+                    <option>select_line</option>
+                    <option>select_line</option>
+                    <option>select_line</option>
+                </select>
+            </div>
+            <div class="select select_line_none">
+                <select>
+                    <option>select_line</option>
+                    <option>select_line</option>
+                    <option>select_line</option>
+                    <option>select_line</option>
+                </select>
+            </div>
+        </div>
+        <div class="guide_title">radio button</div>
+        <div class="guide_contents">
+            <div>
+                <input type="radio" id="radio1" class="radio_btn" name="1" checked>
+                <label for="radio1">radio1</label>
+                <input type="radio" id="radio2" class="radio_btn" name="1">
+                <label for="radio2">radio2</label>
+            </div>
+            <div style="margin-top: 10px">
+                <input type="radio" id="radio3" class="radio_btn" name="2" disabled>
+                <label for="radio3">:disabled</label>
+                <input type="radio" id="radio4" class="radio_btn" name="2" disabled checked>
+                <label for="radio4">:disabled/checked</label>
+            </div>
+            <div style="margin-top: 10px">
+                <input type="radio" id="radio5" class="radio_btn radio_btn_sm" name="1" checked>
+                <label for="radio5">radio1</label>
+                <input type="radio" id="radio6" class="radio_btn radio_btn_sm" name="1">
+                <label for="radio6">radio2</label>
+            </div>
+        </div>
+
+        <div class="guide_title">check box</div>
+        <div class="guide_contents">
+            <div>
+                <input type="checkbox" class="check_box" id="check_box1" checked>
+                <label for="check_box1">checkbox1</label>
+                <input type="checkbox" class="check_box" id="check_box2">
+                <label for="check_box2">checkbox2</label>
+            </div>
+            <div style="margin-top: 10px">
+                <input type="checkbox" class="check_box" disabled>
+                <label>:disabled</label>
+                <input type="checkbox" class="check_box" disabled checked>
+                <label>:disabled:checked</label>
+            </div>
+            <div style="margin-top: 10px">
+                <input type="checkbox" class="check_box check_box_sm" id="check_box3">
+                <label for="check_box3">checkbox_small</label>
+                <input type="checkbox" class="check_box check_box_sm" id="check_box4" checked>
+                <label for="check_box4">:checked</label>
+            </div>
+        </div>
+        <div class="guide_title">check box (toggle)</div>
+        <div class="guide_contents">
+            <div>
+                <input type="checkbox" class="check_box check_box_toggle">
+                <label>checkbox</label>
+                <input type="checkbox" class="check_box check_box_toggle" checked>
+                <label>:checked</label>
+            </div>
+            <div style="margin-top: 10px">
+                <input type="checkbox" class="check_box check_box_toggle" disabled>
+                <label>:disabled</label>
+            </div>
+            <div style="margin-top: 10px">
+                <input type="checkbox" class="check_box check_box_toggle" disabled checked>
+                <label>:disabled:checked</label>
+            </div>
+        </div>
+        <div class="guide_title">button</div>
+        <div class="guide_contents">
+            <div>
+                <button class="btn btn_md btn_round _press">button</button>
+            </div>
+            <div style="margin-top: 10px">
+                <a href="#" class="btn btn_md btn_round _press">a:link</a>
+            </div>
+            <div style="margin-top: 10px">
+                <input type="button" value="input button" class="btn btn_md btn_round _press">
+            </div>
+            <div style="margin-top: 10px">
+                <input type="submit" value="input submit" class="btn btn_md btn_round _press">
+            </div>
+            <div style="margin-top: 10px">
+                <a href="#" class="btn btn_md btn_round disabled _press">a:link .disabled</a>
+            </div>
+            <div style="margin-top: 10px">
+                <button class="btn btn_md btn_round _press" disabled>button :disabled</button>
+            </div>
+            <div style="margin-top: 10px">
+                <button class="btn btn_md btn_light_brown btn_round _press" >btn_light_brown</button>
+            </div>
+            <div style="margin-top: 10px">
+                <button class="btn btn_md btn_light_brown btn_round _press" disabled>btn_light_brown:disabled</button>
+            </div>
+            <div style="margin-top: 10px">
+                <button class="btn btn_md btn_white btn_round _press" >btn_white</button>
+            </div>
+            <div style="margin-top: 10px">
+                <button class="btn btn_md btn_white btn_round _press" disabled >btn_white :disabled</button>
+            </div>
+
+        </div>
+        <div class="guide_title">button 크기</div>
+        <div class="guide_contents">
+            <div>
+                <button class="btn btn_lg _press">btn_lg</button>
+            </div>
+            <div style="margin-top: 10px">
+                <button class="btn btn_lmd _press">btn_lmd</button>
+            </div>
+            <div style="margin-top: 10px">
+                <button class="btn btn_md btn_round _press">btn_md</button>
+            </div>
+            <div style="margin-top: 10px">
+                <button class="btn btn_sm btn_round _press">btn_sm</button>
+            </div>
+            <div style="margin-top: 10px"></div>
+            <div style="margin-top: 10px"></div>
+        </div>
+
+    </div>
+    <div class="guide_title">tab (라인형태)</div>
+    <div class="guide_contents">
+        <div class="tabs tabs_line tabs_col_2 _tabs">
+            <ul class="clearfix">
+                <li class="active">
+                    <a href="#">가나다라</a>
+                </li>
+                <li>
+                    <a href="#">가나다라</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="guide_title">tab (박스형태)</div>
+    <div class="guide_contents">
+        <div class="tabs tabs_box tabs_col_4 _tabs">
+            <ul class="clearfix">
+                <li class="active">
+                    <a href="#">가나다라</a>
+                </li>
+                <li>
+                    <a href="#">가나다라</a>
+                </li>
+                <li>
+                    <a href="#">가나다라</a>
+                </li>
+                <li>
+                    <a href="#">가나다라</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="guide_title">tab (박스형태 비활성)</div>
+    <div class="guide_contents">
+        <div class="tabs tabs_box tabs_col_4 disabled _tabs">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">가나다라</a>
+                </li>
+                <li>
+                    <a href="#">가나다라</a>
+                </li>
+                <li>
+                    <a href="#">가나다라</a>
+                </li>
+                <li>
+                    <a href="#">가나다라</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+</div>
+<!-- // wrap_contents -->
+
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+</body>
+</html>

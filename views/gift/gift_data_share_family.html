@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+    <style>
+    </style>
+</head>
+<body>
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_left _press"><i class="sprite sprite_common sprite_icon_pre"></i>
+        </a>
+        <span>가족사랑 데이터 나눠주기</span>
+    </div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents">
+    <div class="section_contents section_gift section_contents_bottom_btn">
+        <div class="area_num">
+            <p>
+                <em>받는 사람 </em><span>010-2000-2030</span>
+            </p>
+        </div>
+        <div class="area_gift_share">
+            <div class="data_num current">
+                <p>선물할 데이터</p>
+                <div class="num">
+                    <div class="box_select_data">
+                        <select class="select select_data">
+                            <option value="1100">1100</option>
+                            <option value="1000">1000</option>
+                            <option value="900">900</option>
+                            <option value="800">800</option>
+                            <option value="700">700</option>
+                            <option value="600">600</option>
+                            <option value="500">500</option>
+                            <option value="400">400</option>
+                            <option value="300">300</option>
+                            <option value="200">200</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                    <span>MB</span>
+                </div>
+            </div>
+            <div class="data_slider data_slider_bar">
+                <div class="share_slider share_family">
+                    <div class="share_data_bar">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="data_num left">
+                <p>남는 데이터</p>
+                <div class="num">
+                    <span><em>1200</em> MB </span>
+                </div>
+            </div>
+            <div class="desc">
+                <p>
+                    슬라이더를 위・아래로 움직여<br>
+                    선물할 데이터를 선택해주세요
+                </p>
+                <span>지금 선물하는 데이터는 2018년 3월 30일까지 사용 가능합니다</span>
+            </div>
+            <!--disabled 클래스 추가 시 disabled됨-->
+            <a href="#" class="info _press">
+                <i class="sprite sprite_charge sprite_icon_info_brown"></i><span>유의사항</span>
+                <p>내용을 반드시 확인해주세요</p>
+            </a>
+        </div>
+    </div>
+    <div class="section_bottom_btn">
+        <div class="btn_wrap">
+            <button class="btn btn_bottom _press">선물하기</button>
+        </div>
+    </div>
+</div>
+<!-- // wrap_contents -->
+
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/lib/jquery-ui.min.js"></script>
+<script src="../../resources/js/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+<script>
+    $(function () {
+
+        var oDataShare = {
+            oSharingSlider: $('.share_slider'),
+            oSelect: $('.select_data'),
+            nTotal: 1200, // 총 데이터
+            nValue: 200 // 남길 데이터
+        };
+
+        //데이터 나눠주기 슬라이더
+        oDataShare.oSharingSlider.slider({
+            orientation: 'vertical',
+            range: 'max',
+            min: 0,
+            max: oDataShare.nTotal,
+            step: 100,
+            value: oDataShare.nValue,
+            create: function () {
+                var value = oDataShare.nTotal - (oDataShare.oSharingSlider.slider('value'));
+                var nHeight = 100 - ((oDataShare.nTotal - oDataShare.oSharingSlider.slider('value')) / 100);
+                oDataShare.oSelect.val(oDataShare.nTotal - oDataShare.nValue);
+
+                $('.share_data_bar').find('span').css('height', nHeight + '%');
+                $(".data_num.current .num em").html(value);
+                $(".data_num.left .num em").html(oDataShare.nTotal - value);
+            },
+            slide: function (event, ui) {
+                // console.log('ui.value : ' + ui.value);
+                var nHeight = 100 - ((ui.value / oDataShare.nTotal) * 100);
+
+                if (ui.value > oDataShare.nTotal - 100) {
+                    oDataShare.oSelect.val(oDataShare.nTotal - ui.value + 100);
+                    return false;
+                } else if (ui.value < 100) {
+                    $(".data_num.left .num em").html(ui.value + 100);
+                    return false;
+                } else {
+                    $(".data_num.current .num em").html(oDataShare.nTotal - ui.value);
+                    $(".data_num.left .num em").html(ui.value);
+                    oDataShare.oSelect.val(oDataShare.nTotal - ui.value);
+                }
+
+                setBarHeight(nHeight);
+            }
+        });
+
+        oDataShare.oSelect.on('change', function () {
+            // console.log((this.selectedIndex) * 100);
+            var nValue = this.selectedIndex * 100 + 100;
+
+            var nHeight = 100 - ((nValue / oDataShare.nTotal) * 100);
+
+            oDataShare.oSharingSlider.slider("value", (this.selectedIndex) * 100 + 100);
+            setBarHeight(nHeight);
+            $(".data_num.left .num em").html(nValue);
+        });
+
+        // 우측 바 yellow 영역 height
+        var setBarHeight = function (number) {
+            $('.share_data_bar').find('span').css('height', number + '%');
+        }
+
+    });
+</script>
+</body>
+</html>

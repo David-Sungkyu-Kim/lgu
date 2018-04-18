@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+</head>
+<body>
+<div class="popup_all">
+    <div class="popup_header">
+        <span>월별 데이터 사용량</span>
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_right _press"><i class="sprite sprite_common sprite_icon_close"></i></a>
+    </div>
+    <div class="popup_body">
+        <div class="section_contents section_home section_contents_txt_btn">
+            <div class="area_date"><span>2018.01 - 2018.04</span></div>
+            <div class="area_chart area_data_detail area_multiple_line_chart _monthlyDataChart">
+                <div id="multipleLineChart"></div>
+                <!-- 사용량 합계 값 표시되는 부분 -->
+                <div class="box_sum">
+                    <ul class="clearfix">
+                        <li>184MB</li>
+                        <li>4,824MB</li>
+                        <li>2,824MB</li>
+                        <li>3,824MB</li>
+                    </ul>
+                </div>
+                <div class="chart_desc ">
+                    <div class="area_chart_txt">
+                        <p class="title">기본데이터</p>
+                    </div>
+                    <ul class="clearfix data_list data_list_col_2">
+                        <li class="basic">
+                            <span>기본 데이터</span>
+                            <p><span>50</span>MB</p>
+                            <p class="whole"><span>10,000</span>MB</p>
+                        </li>
+                        <li class="ring">
+                            <span>링</span>
+                            <p><span>300</span>MB</p>
+                            <p class="whole"><span>10,000</span>MB</p>
+                        </li>
+                        <li class="safety">
+                            <span>안심옵션</span>
+                            <p><span>80</span>MB</p>
+                            <p class="whole"><span>10,000</span>MB</p>
+                        </li>
+                        <li class="overcharge">
+                            <span>중량과금</span>
+                            <p><span>800</span>MB</p>
+                            <p class="whole"><span>10,000</span>MB</p>
+                        </li>
+                    </ul>
+                    <div class="area_chart_txt">
+                        <p class="title">충전/선물</p>
+                    </div>
+                    <ul class="clearfix data_list data_list_col_2">
+                        <li class="double">
+                            <span>데이터 2배 쿠폰</span>
+                            <p><span>20</span>MB</p>
+                        </li>
+                        <li class="gift">
+                            <span>선물받은 데이터</span>
+                            <p><span>100</span>MB</p>
+                        </li>
+                        <li class="family">
+                            <span>가족사랑 데이터</span>
+                            <p><span>20</span>MB</p>
+                        </li>
+                        <li class="gift_card">
+                            <span>데이터 상품권</span>
+                            <p><span>10</span>MB</p>
+                        </li>
+                        <li class="free">
+                            <span>무료 데이터</span>
+                            <p><span>10</span>MB</p>
+                        </li>
+                        <li>
+                            <i class="sprite sprite_main sprite_data_none"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chart_desc ">
+                    <div class="area_chart_txt">
+                        <p class="title">기타</p>
+                    </div>
+                    <ul class="clearfix data_list data_list_col_2">
+                        <li class="video">
+                            <span>비디오데이터</span>
+                            <p><span>50</span>MB</p>
+                        </li>
+                        <li>
+                            <i class="sprite sprite_main sprite_data_none"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="txt_bottom">
+            해당 기간동안 소진된 평균 데이터량입니다.
+        </p>
+    </div>
+</div>
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/lib/highcharts.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+<script>
+    Highcharts.chart('multipleLineChart', {
+        chart: {
+            events: {
+                load: function () {
+                    //이번 달 x축 label 배경컬러
+                    fnThisMonth();
+                }
+            },
+            animation: {
+                duration: 0
+            },
+            type: 'column',
+            marginTop: 30,
+            marginLeft: 65,
+            marginRight: 30,
+            marginBottom: 70,
+            height: "278"
+        },
+        credits: {
+            enabled: false
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: ['1월', '2월', '3월', '4월'],
+            labels: {
+                useHTML: true,
+                format: '<span>{value}</span>',
+                style: {
+                    color: "#a29d9b",
+                    fontSize: "14px"
+                }
+            },
+            gridLineColor: "#d9d9d9",
+            tickWidth: 0,
+            alternateGridColor: '#f8fdfc'
+
+        },
+        yAxis: {
+            min: 0,
+            max: 300,
+            title: {
+                text: null
+            },
+            gridLineColor: "#f6f4f4",
+            labels: {
+                enabled: true,
+                useHTML: true,
+                format: '<span>{value}</span>',
+                style: {
+                    color: "#999999",
+                    fontSize: "10px",
+                    fontFamily: "Oswald"
+                }
+            },
+            categories: ['MB', '30', '80', '150', '200', '300'],
+            tickInterval: 60,
+            minorTickInterval: 'auto'
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            enabled: true
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal'
+            },
+            series: {
+                animation: {
+                    duration:0
+                },
+                pointPadding: 0.18,
+                groupPadding: 0,
+                borderWidth: 0,
+                shadow: false
+            }
+        },
+        series:
+            [
+                {
+                    name: 'before',
+                    data: [15, 75, 154, null],
+                    color: "#d9cac3"
+                }, {
+                    name: 'basic',
+                    data: [null, null, null, 10],
+                    color: "#a0e9d1"
+                }, {
+                    name: 'family',
+                    data: [null, null, null, 20],
+                    color: "#fcdec6"
+                }, {
+                    name: 'video',
+                    data: [null, null, null, 10],
+                    color: "#adc6ec"
+                }, {
+                    name: 'promotion',
+                    data: [null, null, null, 10],
+                    color: "#e1ea98"
+                }, {
+                    name: 'double',
+                    data: [null, null, null, 10],
+                    color: "#fdcdd2"
+                }, {
+                    name: 'gift_card',
+                    data: [null, null, null, 10],
+                    color: "#fdeaa6"
+                }, {
+                    name: 'family',
+                    data: [null, null, null, 10],
+                    color: "#fac18d"
+                }, {
+                    name: 'gift',
+                    data: [null, null, null, 50],
+                    color: "#c8c0e8"
+                }, {
+                    name: 'basic',
+                    data: [null, null, null, 30],
+                    color: "#92d3cd"
+                }
+            ]
+    });
+
+    //label 표현을 위한 class
+    function fnThisMonth() {
+        $('._monthlyDataChart .highcharts-xaxis-labels').find('span:last-child > span').addClass('label_this_month');
+        $('._monthlyDataChart .highcharts-yaxis-labels').find('span:first-child > span').addClass('label_mb');
+        $('._monthlyDataChart .box_sum').find('li:last-child').addClass('current');
+    }
+
+
+</script>
+</body>
+</html>

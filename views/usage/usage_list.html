@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/lib/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+</head>
+<body>
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_left _press"><i class="sprite sprite_common sprite_icon_pre"></i>
+        </a>
+        <span>이용내역</span>
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_right _press">
+            <i class="sprite sprite_common sprite_icon_nav"></i>
+        </a>
+    </div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents ">
+    <div class="section_contents section_usage">
+        <div class="area_menu">
+            <div class="date_tab date_tab_col_2">
+                <ul class="clearfix">
+                    <li>
+                        <!--disabled 클래스 추가 시 disabled됨-->
+                        <a href="#" class="_press">
+                            <input type="text" class="_datepickerFrom">
+                            <i class="sprite sprite_page sprite_icon_calender"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <!--disabled 클래스 추가 시 disabled됨-->
+                        <a href="#" class="_press">
+                            <input type="text" class="_datepickerTo">
+                            <i class="sprite sprite_page sprite_icon_calender"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs tabs_box tabs_col_4 _tabs">
+                <ul class="clearfix">
+                    <li class="active">
+                        <a href="#">전체</a>
+                    </li>
+                    <li>
+                        <a href="#">충전</a>
+                    </li>
+                    <li class="_selectActive">
+                        <a href="#">보낸선물</a>
+                    </li>
+                    <li>
+                        <a href="#">받은선물</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="select">
+                <select>
+                    <option>내 데이터 나눠주기</option>
+                    <option>내 데이터 나눠주기</option>
+                    <option>내 데이터 나눠주기</option>
+                    <option>내 데이터 나눠주기</option>
+                </select>
+            </div>
+        </div>
+        <div class="area_usage_list">
+            <p>조회 <span>4</span>건</p>
+            <div>
+                <span class="date">03.01</span>
+                <ul>
+                    <li>
+                        <div class="condition red">
+                            <i class="sprite sprite_page sprite_icon_send"></i>
+                            <span>보낸선물 <em>010-8080-1234</em></span>
+                        </div>
+                        <p>내 데이터 나눠주기</p>
+                        <div class="period">
+                            <span>2019.01.31</span>까지
+                            <span class="unused_label">미사용</span>
+                        </div>
+                        <!--disabled 클래스 추가 시 disabled됨-->
+                        <a href="#" class="detail_more _press">
+                            <p>1.0 <span>GB</span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="condition">
+                            <i class="sprite sprite_page sprite_icon_charge"></i>
+                            <span>충전</span>
+                        </div>
+                        <p>데이터 상품권(구매)</p>
+                        <div class="period">
+                            <span>2019.01.31</span>까지
+                            <span class="unused_label">미사용</span>
+                        </div>
+                        <!--disabled 클래스 추가 시 disabled됨-->
+                        <a href="#" class="detail_more _press">
+                            <p>2.0 <span>GB</span></p>
+                            <div class="num"><span>19,000</span>원</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span class="date">02.31</span>
+                <ul>
+                    <li>
+                        <div class="condition">
+                            <i class="sprite sprite_page sprite_icon_gift"></i>
+                            <span>받은선물</span>
+                        </div>
+                        <p>데이터 나눠받기</p>
+                        <div class="period">
+                            <span>2019.01.31</span>까지
+                            <span class="unused_label">미사용</span>
+                        </div>
+                        <!--disabled 클래스 추가 시 disabled됨-->
+                        <a href="#" class="detail_more _press">
+                            <p>500<span>MB</span></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- // wrap_contents -->
+
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/lib/jquery-ui.min.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+<script>
+    $(function() {
+        var oDatePickerFrom = $('._datepickerFrom');
+        var oDatePickerTo = $('._datepickerTo');
+
+        $.datepicker.regional['ko'] = {
+            closeText: '닫기',
+            prevText: '이전',
+            nextText: '다음',
+            currentText: '오늘',
+            monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+            monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+            dayNames: ['일','월','화','수','목','금','토'],
+            dayNamesShort: ['일','월','화','수','목','금','토'],
+            dayNamesMin: ['일','월','화','수','목','금','토'],
+            weekHeader: 'Wk',
+            dateFormat: 'yy.mm.dd',
+            firstDay: 0,
+            isRTL: false,
+            showMonthAfterYear: true,
+            yearSuffix: '년',
+            showOtherMonths: true
+        };
+
+        $.datepicker.setDefaults($.datepicker.regional['ko']);
+
+        oDatePickerFrom.datepicker({
+            showMonthAfterYear:true
+        });
+
+        oDatePickerTo.datepicker({
+            showMonthAfterYear:true
+        });
+
+        oDatePickerFrom.on('focus', function () {
+            $('#ui-datepicker-div').wrap('<div class="popup_dim"></div>')
+        });
+
+        oDatePickerFrom.on('blur', function () {
+            $('#ui-datepicker-div').unwrap();
+        });
+
+        oDatePickerTo.on('focus', function () {
+            $('#ui-datepicker-div').wrap('<div class="popup_dim"></div>')
+        });
+
+        oDatePickerTo.on('blur', function () {
+            $('#ui-datepicker-div').unwrap();
+        });
+
+    });
+</script>
+</body>
+</html>

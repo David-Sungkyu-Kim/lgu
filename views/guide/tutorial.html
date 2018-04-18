@@ -1,0 +1,539 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>데이터충전앱</title>
+    <script src="../../resources/up/libs/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../resources/up/libs/jquery.mobile-1.4.5.js"></script>
+
+    <script src="../../resources/up/js/common.js"></script>
+    <script src="../../resources/up/libs/svginjector/svg-injector.min.js"></script>
+
+    <script src="../../resources/up/libs/tweenmax/TweenMax.js"></script>
+    <script src="../../resources/up/libs/tweenmax/TweenLite.js"></script>
+    <script src="../../resources/up/libs/tweenmax/MorphSVGPlugin.js"></script>
+    <script src="../../resources/up/libs/tweenmax/Physics2DPlugin.min.js"></script>
+    <script src="../../resources/up/libs/tweenmax/easing/CustomBounce.js"></script>
+    <script src="../../resources/up/libs/tweenmax/easing/CustomEase.js"></script>
+    <script src="../../resources/js/lib/swiper.min.js"></script>
+    <script src="../../resources/up/js/intro.js"></script>
+
+
+    <link rel="stylesheet" href="../../resources/up/css/ui.css">
+    <link rel="stylesheet" href="../../resources/up/libs/swiper/swiper.css">
+
+</head>
+<body class="intro" id="intro" data-scene="1">
+
+<div class="swiper-container">
+    <div class="swiper-wrapper title-area-wrapper">
+        <div class="swiper-slide ">
+            <div class="tt-txt p1">
+                <span class="t">U+ 데이터충전소</span>
+                <span class="c">데이터 관리를 쉽게!<br/>
+          재밌게! 한눈에!
+          </span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="tt-txt p2">
+                <span class="t1">캐릭터로 쉽게 알아보는</span>
+                <span class="t2">내 데이터 양</span>
+                <span class="c">
+          캐릭터가 남은 데이터 양에 따라<br/>
+          활발하게, 천천히 움직여요
+          </span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="tt-txt p3">
+                <span class="t1">데이터가 부족하면</span>
+                <span class="t2">데이터 충전앱으로!</span>
+                <span class="c">
+          1년간 쓸 수 있는 데이터 상품권,<br/>
+          장기고객에게 제공되는 데이터2배쿠폰으로<br/>
+          부족한 데이터를 충전해요
+          </span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="tt-txt p3">
+                <span class="t1">가족, 친구에게 데이터를</span>
+                <span class="t2">선물할 수 있어요!</span>
+                <span class="c">
+          데이터 상품권, 2배쿠폰, 가족사랑데이터,<br/>
+          주고받기 등 다양한 방법으로<br/>
+          고마운 이에게 데이터를 선물하세요.
+          </span>
+            </div>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="container">
+
+    <div class="scrl_indicator">
+
+        <div class="scroll-mouse-3">
+
+            <div class="wheel"></div>
+        </div>
+        <a class="txt fnt-osw">Scroll</a>
+    </div>
+
+
+    <svg viewBox="0 0 123.81 85.1" class="inject-me obj01-wrapper">
+        <path class="obj01-1"
+              d="M38,75.79a33.24,33.24,0,0,0,56.21-24c0-.27,0-.54,0-.81-8.1,4.48-17.45,9.13-27.57,13.6S46.8,72.81,38,75.79Z"/>
+        <path class="obj01-1"
+              d="M93.79,46.36h0a33.25,33.25,0,0,0-66.06,5.4s0,0,0,.05v0c0,.23,0,.46,0,.69s0,.46,0,.69a33.25,33.25,0,1,0,66-6.87Z"/>
+        <path class="obj01-2"
+              d="M123.62,26.5c-1.8-4.08-16.4-1.86-36.41,4.8a33.31,33.31,0,0,1,2.47,3.64c11.9-3.73,20.06-5,21-2.74S105,39.87,93.81,46.35A307.79,307.79,0,0,1,65,60.78a307.87,307.87,0,0,1-30.06,11.6c-12.34,3.93-20.85,5.28-21.86,3S18.5,68,29.26,61.67a33,33,0,0,1-1-4.28C9.84,67.7-1.62,77,.19,81.08S17.3,82.83,38,75.79c8.76-3,18.49-6.77,28.62-11.24s19.48-9.12,27.57-13.6C113.4,40.34,125.47,30.68,123.62,26.5Z"/>
+        <circle class="obj01-3" cx="92.12" cy="8.17" r="7.67"/>
+    </svg>
+    <svg class="inject-me obj02-wrapper" viewBox="0 0 121.85 112.5">
+        <circle class="obj02-1" cx="56.25" cy="56.25" r="56.25"/>
+        <g class="obj02-2">
+            <path class="obj02-3"
+                  d="M71.87,93.42c2.54,0,4.6-1.67,4.6-3.73S74.41,86,71.87,86H69.71v0c-2.36-.16-4.22-1.76-4.22-3.71s2.06-3.73,4.6-3.73h39.72c2.54,0,4.6,1.67,4.6,3.73s-2,3.7-4.55,3.73h-1.42c-2.54,0-4.6,1.67-4.6,3.73s2.06,3.73,4.6,3.73h8.79c2.54,0,4.6,1.67,4.6,3.73s-2.06,3.73-4.6,3.73H56.94c-2.54,0-4.6-1.67-4.6-3.73s2.06-3.73,4.6-3.73H71.87Z"/>
+        </g>
+    </svg>
+
+    <svg class="obj03-wrapper inject-me" viewBox="0 0 897.3 383.23">
+        <path class="obj03-1"
+              d="M853.27,41.5a10.38,10.38,0,0,1,0-20.75h4.88v0A10.37,10.37,0,0,0,857.27,0h-89.5a10.37,10.37,0,0,0-.12,20.74h3.19a10.38,10.38,0,0,1,0,20.75H751a10.38,10.38,0,0,0,0,20.75h135.9a10.38,10.38,0,0,0,0-20.75H853.27Z"/>
+        <path class="obj03-2"
+              d="M112.63,362.48a10.38,10.38,0,0,1,0-20.75h4.88v0a10.37,10.37,0,0,0-.87-20.71H27.13A10.37,10.37,0,0,0,27,341.73h3.19a10.38,10.38,0,0,1,0,20.75H10.38a10.38,10.38,0,0,0,0,20.75h135.9a10.38,10.38,0,0,0,0-20.75H112.63Z"/>
+    </svg>
+
+    <svg class="inject-me objs01-1-wrapper" viewBox="0 0 153.25 110.87">
+        <polygon class="objs101-1" points="135.25 46.62 19 46.62 7 80.37 146.25 80.37 135.25 46.62"/>
+        <rect class="objs101-2" y="80.37" width="153.25" height="12.75" rx="6.37" ry="6.37"/>
+        <circle class="objs101-3" cx="76.62" cy="64.31" r="6.38"/>
+        <circle class="objs101-3" cx="115.29" cy="64.31" r="6.38"/>
+        <circle class="objs101-3" cx="37.96" cy="64.31" r="6.38"/>
+        <path class="objs101-4" d="M76.63,110.87a79.32,79.32,0,0,0,50.11-17.75H26.51A79.32,79.32,0,0,0,76.63,110.87Z"/>
+        <path class="objs101-5" d="M76.63,0A51.37,51.37,0,0,0,25.48,46.62H127.77A51.37,51.37,0,0,0,76.63,0Z"/>
+        <path class="objs101-3" d="M76.63,8.87A36.23,36.23,0,0,0,40.56,41.75h72.14A36.23,36.23,0,0,0,76.63,8.87Z"/>
+    </svg>
+
+
+    <div class="circle">
+
+        <svg class="inject-me objs1-nemo-wrapper" viewBox="0 0 274.25 508.54">
+
+            <rect class="objs1-nemo-1" width="274.25" height="508.54"/>
+            <circle class="objs1-nemo-2" cx="110.06" cy="79.74" r="21.54"/>
+            <circle class="objs1-nemo-2" cx="164.19" cy="79.74" r="21.54"/>
+            <circle class="objs1-nemo-3" cx="164.19" cy="79.74" r="8.34"/>
+            <circle class="objs1-nemo-3" cx="110.06" cy="79.74" r="8.34"/>
+
+            <path id="OBJS1-NEMO-END-MOUTH" class="objs1-nemo-4"
+                  d="M88.7,127.39s10.83,15.88,48.61,15.88,48.61-15.88,48.61-15.88"/>
+            <path id="OBJS1-NEMO-START-MOUTH" class="objs1-nemo-4"
+                  d="M88.48,143.58s10.83-.34,48.61-.34,48.56.34,48.56.34"/>
+            <path class="objs1-nemo-2 OBJS1-NEMO-TEETH"
+                  d="M165.78,125a1.83,1.83,0,0,0-3.17,0l-6.53,11.31,0,0h16.27l0,0Z"/>
+            <path class="objs1-nemo-2 OBJS1-NEMO-TEETH"
+                  d="M111.64,125a1.83,1.83,0,0,0-3.17,0l-6.53,11.31,0,0H118.2l0,0Z"/>
+
+        </svg>
+
+        <svg class="inject-me objrock-wrapper" viewBox="0 0 840.67 502.67">
+            <polygon class="objrock-1"
+                     points="43.33 23.15 132.67 23.15 147.33 5.33 194.67 5.33 210 23.15 642.67 23.15 657.59 0 740.59 0 757.33 23.15 815.45 23.15 840.67 40 807.33 403 434 502.67 92 403 0 154 40 23.15 43.33 23.15"/>
+            <path class="objrock-2"
+                  d="M337.67,246c0-13.48-48.35-24.42-108-24.42s-108,10.93-108,24.42c0,3.52,3.29,6.86,9.21,9.88,10.69-8.64,50.86-15.06,98.79-15.06s88.1,6.42,98.79,15.06C334.37,252.86,337.67,249.52,337.67,246Z"/>
+            <path class="objrock-3"
+                  d="M130.88,255.88c16.78,8.56,54.69,14.54,98.79,14.54s82-6,98.79-14.54c-10.69-8.64-50.86-15.06-98.79-15.06S141.57,247.24,130.88,255.88Z"/>
+            <path class="objrock-2"
+                  d="M818,296.75c0-13.48-48.35-24.42-108-24.42s-108,10.93-108,24.42c0,3.52,3.29,6.86,9.21,9.88C621.9,298,662.07,291.57,710,291.57s88.1,6.42,98.79,15.06C814.71,303.61,818,300.27,818,296.75Z"/>
+            <path class="objrock-3"
+                  d="M611.22,306.63c16.78,8.56,54.69,14.54,98.79,14.54s82-6,98.79-14.54C798.1,298,757.93,291.57,710,291.57S621.9,298,611.22,306.63Z"/>
+            <path class="objrock-2"
+                  d="M692.33,196.57c0-3.3-11.83-6-26.42-6s-26.42,2.67-26.42,6c0,.86.81,1.68,2.25,2.42,2.61-2.11,12.44-3.68,24.16-3.68s21.55,1.57,24.16,3.68C691.53,198.25,692.33,197.43,692.33,196.57Z"/>
+            <path class="objrock-3"
+                  d="M641.75,199c4.1,2.09,13.38,3.56,24.16,3.56S686,201.09,690.08,199c-2.61-2.11-12.44-3.68-24.16-3.68S644.37,196.88,641.75,199Z"/>
+            <path class="objrock-2"
+                  d="M731,59.38c0-4.85-14.57-8.78-32.54-8.78s-32.54,3.93-32.54,8.78c0,1.26,1,2.47,2.78,3.55,3.22-3.11,15.32-5.42,29.77-5.42s26.55,2.31,29.77,5.42C730,61.85,731,60.65,731,59.38Z"/>
+            <path class="objrock-3"
+                  d="M668.69,62.94c5.06,3.08,16.48,5.23,29.77,5.23s24.71-2.15,29.77-5.23c-3.22-3.11-15.32-5.42-29.77-5.42S671.91,59.83,668.69,62.94Z"/>
+            <path class="objrock-2"
+                  d="M218.67,79.5c0-8-21.71-14.5-48.5-14.5s-48.5,6.49-48.5,14.5c0,2.09,1.48,4.07,4.14,5.87,4.8-5.13,22.84-8.94,44.36-8.94s39.56,3.81,44.36,8.94C217.19,83.57,218.67,81.59,218.67,79.5Z"/>
+            <path class="objrock-3"
+                  d="M125.8,85.37c7.54,5.09,24.56,8.63,44.36,8.63s36.83-3.55,44.36-8.63c-4.8-5.13-22.84-8.94-44.36-8.94S130.6,80.24,125.8,85.37Z"/>
+        </svg>
+        <svg class="inject-me objbgst-wrapper" viewBox="0 0 577.05 1267.8">
+            <line class="objbgst-1" x1="442.42" y1="1128.35" x2="445.87" y2="1118.14"/>
+            <polygon class="objbgst-1"
+                     points="88.38 1182.98 92.54 1170.67 96.69 1182.98 109 1187.14 96.69 1191.3 92.54 1203.61 88.38 1191.3 76.07 1187.14 88.38 1182.98"/>
+            <polygon class="objbgst-1"
+                     points="460.18 1256.12 462.54 1249.14 464.89 1256.12 471.87 1258.47 464.89 1260.83 462.54 1267.8 460.18 1260.83 453.2 1258.47 460.18 1256.12"/>
+            <polygon class="objbgst-1"
+                     points="405.77 991.94 409.42 981.16 413.06 991.94 423.85 995.59 413.06 999.23 409.42 1010.02 405.77 999.23 394.99 995.59 405.77 991.94"/>
+            <circle class="objbgst-1" cx="310.06" cy="883.31" r="5.5"/>
+            <circle class="objbgst-2" cx="41.51" cy="1097.67" r="6.46"
+                    transform="translate(-764.01 350.85) rotate(-45)"/>
+            <polygon class="objbgst-1"
+                     points="101.07 920.34 104.24 910.97 107.4 920.34 116.77 923.51 107.4 926.67 104.24 936.04 101.07 926.67 91.7 923.51 101.07 920.34"/>
+            <circle class="objbgst-1" cx="359.88" cy="831.04" r="12.72"/>
+            <polygon class="objbgst-1"
+                     points="157.53 710.34 160.19 702.46 162.85 710.34 170.72 713 162.85 715.66 160.19 723.53 157.53 715.66 149.65 713 157.53 710.34"/>
+            <polygon class="objbgst-1"
+                     points="189.95 683.67 192.07 677.42 194.18 683.67 200.43 685.79 194.18 687.9 192.07 694.15 189.95 687.9 183.7 685.79 189.95 683.67"/>
+            <polygon class="objbgst-1"
+                     points="223.85 722.37 227.01 713 230.18 722.37 239.55 725.53 230.18 728.7 227.01 738.07 223.85 728.7 214.48 725.53 223.85 722.37"/>
+            <circle class="objbgst-1" cx="519.68" cy="552.18" r="10.85"/>
+            <polygon class="objbgst-1"
+                     points="471.25 511.85 473.1 506.38 474.95 511.85 480.41 513.7 474.95 515.54 473.1 521.01 471.25 515.54 465.79 513.7 471.25 511.85"/>
+            <polygon class="objbgst-1"
+                     points="463.67 387.27 465.79 381.02 467.9 387.27 474.15 389.38 467.9 391.5 465.79 397.75 463.67 391.5 457.42 389.38 463.67 387.27"/>
+            <circle class="objbgst-2" cx="405.61" cy="467.84" r="6.46"
+                    transform="translate(-212.01 423.83) rotate(-45)"/>
+            <circle class="objbgst-1" cx="344.28" cy="419.77" r="9.45"/>
+            <circle class="objbgst-1" cx="66.52" cy="328.52" r="14.02"/>
+            <circle class="objbgst-1" cx="17" cy="155" r="17"/>
+            <circle class="objbgst-1" cx="83.52" cy="17" r="17"/>
+            <circle class="objbgst-2" cx="80.55" cy="86.6" r="6.46" transform="translate(-37.64 82.32) rotate(-45)"/>
+            <polygon class="objbgst-1"
+                     points="20.95 43.17 23.07 36.92 25.18 43.17 31.43 45.28 25.18 47.4 23.07 53.65 20.95 47.4 14.7 45.28 20.95 43.17"/>
+            <circle class="objbgst-1" cx="553.83" cy="53.65" r="23.22"/>
+        </svg>
+
+
+        <div class="scn2 fnt-osw ">
+            <p class="cur_amt fnt-osw">
+                <span class="rolling odometer fnt-osw count" id="tal">10,000</span>MB
+            </p>
+            <p class="total_amt fnt-osw">
+                10,000<span class="unit">MB</span>
+            </p>
+            <!-- SVG여기 -->
+
+            <svg class="inject-me sc2-nemo sc2-nemo-face" viewBox="0 0 274.25 581.26">
+                <rect class="objs2-fmain-1" width="274.25" height="581.26"/>
+                <path class="objs2-fmain-2" d="M102.33,136.72s14.22,9.6,36.38,9.6,33.22-9.6,33.22-9.6"/>
+
+                <g id="sunglass">
+                    <path class="objs2-fmain-3"
+                          d="M219.27,72a6.9,6.9,0,0,0-6.88-6.88H61.86a6.87,6.87,0,0,0-.17,13.74A1.13,1.13,0,0,0,62,79h4.77a.77.77,0,0,0,.24,0h.18c4.22,21.84,17.9,41.2,34.13,41.2s29.8-19.21,34.08-41c.13,0,.24,0,.37,0h3c4.28,21.73,17.91,40.92,34.08,40.92s29.91-19.36,34.13-41.2h.18a.76.76,0,0,0,.24,0h4.77a1.12,1.12,0,0,0,.33-.06A6.89,6.89,0,0,0,219.27,72Z"/>
+                    <path class=".objs2-fmain-4"
+                          d="M122.76,77.95c0,11.17-6.64,31.46-20.67,31.46S80.86,89.12,80.86,77.95Z"/>
+                    <path class=".objs2-fmain-4"
+                          d="M193.83,77.95c0,11.17-6.65,31.46-20.68,31.46s-21.23-20.29-21.23-31.46Z"/>
+                </g>
+            </svg>
+            <svg class="inject-me sc2-nemo sc2-nemo-bg" viewBox="0 0 275.03 549.2">
+                <defs>
+                    <pattern id="diagonalHatch" width="10" height="10"
+                             patternUnits="userSpaceOnUse"
+                             patternTransform="translate(0,200) ">
+                        <animateTransform attributeType="xml"
+                                          attributeName="patternTransform"
+                                          type="translate" from="0" to="200" begin="0"
+                                          dur="40s" repeatCount="indefinite"/>
+                        <path d='M-1,1 l2,-2
+           M0,10 l10,-10
+           M9,11 l2,-2'
+                              style="stroke:#d9d9d9; stroke-width:3; "/>
+                </defs>
+                <rect x="0" y="0" width="320" height="684" fill="#e4e4e4"/>
+                <rect x="0" y="0" width="320" height="684" fill="url(#diagonalHatch)"/>
+
+                <circle class="objs2-fbg-1" cx="107.31" cy="49.54" r="23.4"/>
+                <circle class="objs2-fbg-1" cx="164.98" cy="49.54" r="23.4"/>
+                <ellipse class="objs2-fbg-2" cx="107.31" cy="56.77" rx="4.69" ry="11.24"/>
+                <ellipse class="objs2-fbg-2" cx="164.98" cy="56.77" rx="4.69" ry="11.24"/>
+                <path class="objs2-fbg-3" d="M95.49,102.46h81.69S165.08,87,136,87,95.49,102.46,95.49,102.46Z"/>
+                <circle id="eyedrop" class="objs2-fbg-1" cx="175.46" cy="60.76" r="9.18"/>
+            </svg>
+
+        </div>
+        <div class="scn3">
+            <div class="bbl" id="bubbleContainer">
+
+            </div>
+            <svg class="inject-me objs3-env-wrapper scn3" viewBox="0 0 659.28 588.43">
+                <polygon class="objs3-env-2"
+                         points="619.13 558.42 20 558.42 20 167.95 319.56 0.8 619.13 167.95 619.13 558.42"/>
+                <g id="PAPER" x="100" y="100">
+                    <rect class="objs3-env-6 env-paper" x="70.41" width="498.31" height="393.67"/>
+                    <rect class="objs3-env-7 env-paper" x="70.41" y="196.04" width="498.31" height="165.55"/>
+                    <path class="objs3-env-8 env-paper"
+                          d="M251.78,121.88h16.09l12.81,30.87L306,121.88h16.91l-36.45,41,21.67,43.84H292.18L276.74,172l-28.9,34.81H231.1l39.57-45Z"/>
+                    <path class="objs3-env-8 env-paper"
+                          d="M332.73,113.59a38.44,38.44,0,0,1,8.37-12.48,35.81,35.81,0,0,1,12.64-8,47.15,47.15,0,0,1,16.75-2.79,38.69,38.69,0,0,1,13.05,2.13,29.75,29.75,0,0,1,10.34,6.16,28.36,28.36,0,0,1,6.81,9.77,35.17,35.17,0,0,1,0,25.86A42.5,42.5,0,0,1,394.22,145a57.23,57.23,0,0,1-9.28,8.87,129.81,129.81,0,0,1-11,7.55q-5.75,3.53-11.49,6.73t-10.67,6.32q-2.79,1.81-5.67,3.94a49,49,0,0,0-10.1,10.1,23.84,23.84,0,0,0-3.28,6h60.59l-2.63,12.31H316.64a48,48,0,0,1,3.53-15.52,49,49,0,0,1,7.22-11.9,55.6,55.6,0,0,1,9.93-9.36q5.58-4.1,11.66-7.88t12.32-7.39a125.59,125.59,0,0,0,12-7.88q3.12-2.46,5.91-5a34.49,34.49,0,0,0,4.84-5.42,23.71,23.71,0,0,0,3.2-6.32,24.93,24.93,0,0,0,1.15-7.88q0-9.36-5.25-14.45t-14.29-5.09a23.48,23.48,0,0,0-18.31,8.13,27.25,27.25,0,0,0-5,8.7,37.15,37.15,0,0,0-2.13,10.43H328.63A57.22,57.22,0,0,1,332.73,113.59Z"/>
+
+                    <path class="objs3-env-8 env-paper"
+                          d="M250.85,247.76a6.12,6.12,0,0,0-6.7.07,7.68,7.68,0,0,0-2.16,2.62,12.77,12.77,0,0,0-1.18,3.43,18,18,0,0,0-.36,3.43,8.77,8.77,0,0,0,.24,2.09,4.32,4.32,0,0,0,.82,1.7,4.19,4.19,0,0,0,1.46,1.15,5,5,0,0,0,2.18.43,5.1,5.1,0,0,0,2-.38,5.78,5.78,0,0,0,1.58-1,5.42,5.42,0,0,0,1.15-1.46,9.88,9.88,0,0,0,.74-1.75h6.82a14.72,14.72,0,0,1-4.73,7.18,12.65,12.65,0,0,1-8.09,2.52q-5.23,0-8.14-2.57t-2.9-8a18.78,18.78,0,0,1,.94-6,14.9,14.9,0,0,1,2.74-4.94,12.83,12.83,0,0,1,4.39-3.36,13.78,13.78,0,0,1,6-1.22,16.82,16.82,0,0,1,4.27.53,10.39,10.39,0,0,1,3.53,1.63,7.85,7.85,0,0,1,2.4,2.88,9.79,9.79,0,0,1,.94,4.22H252A4,4,0,0,0,250.85,247.76Z"/>
+
+                    <path class="objs3-env-8 env-paper"
+                          d="M260.36,251.14a14.82,14.82,0,0,1,2.83-4.92,13.32,13.32,0,0,1,4.49-3.34,14,14,0,0,1,6-1.22,16,16,0,0,1,4.68.65,10.22,10.22,0,0,1,3.67,1.94,8.64,8.64,0,0,1,2.38,3.26,11.82,11.82,0,0,1,.84,4.66,18.67,18.67,0,0,1-1,6.12,14.54,14.54,0,0,1-2.86,5,13.24,13.24,0,0,1-4.54,3.31,14.64,14.64,0,0,1-6.07,1.2,12.26,12.26,0,0,1-8.28-2.66q-3.1-2.66-3.1-8A17.93,17.93,0,0,1,260.36,251.14Zm6.14,8.09a5.22,5.22,0,0,0,.94,1.78,4.6,4.6,0,0,0,1.54,1.22,4.65,4.65,0,0,0,2.11.46,5.3,5.3,0,0,0,3.29-1,8.43,8.43,0,0,0,2.26-2.59,12.74,12.74,0,0,0,1.32-3.38,14.83,14.83,0,0,0,.43-3.41,6.44,6.44,0,0,0-1.13-4,4.56,4.56,0,0,0-3.86-1.49,5.23,5.23,0,0,0-3.24,1,8.23,8.23,0,0,0-2.23,2.57,12.91,12.91,0,0,0-1.3,3.34,14.58,14.58,0,0,0-.43,3.38A7.07,7.07,0,0,0,266.5,259.23Z"/>
+
+                    <path class="objs3-env-8 env-paper"
+                          d="M302.81,267.15l.77-3.46h-.1a10.65,10.65,0,0,1-8.69,4.08q-7.25,0-7.25-6.62a8.61,8.61,0,0,1,.07-1q.07-.6.19-1.22c.08-.42.16-.81.24-1.18s.15-.66.22-.89l3.07-14.54h6.82l-3,14.54a4.91,4.91,0,0,0-.17.7c0,.27-.1.55-.14.84a7.91,7.91,0,0,0-.1.84q0,.41,0,.65a2.15,2.15,0,0,0,1,1.82,3.83,3.83,0,0,0,2.23.72,5.89,5.89,0,0,0,2.71-.6,6.7,6.7,0,0,0,2-1.56,8.64,8.64,0,0,0,1.39-2.21,13.59,13.59,0,0,0,.84-2.54l2.78-13.2h6.82l-5.18,24.82Z"/>
+
+                    <path class="objs3-env-8 env-paper"
+                          d="M325.66,242.33l-.67,3.07.1.1a6.86,6.86,0,0,1,3.14-2.93,10.2,10.2,0,0,1,4.3-.91,9,9,0,0,1,7,2.64,10.11,10.11,0,0,1,2.45,7.15,22.24,22.24,0,0,1-.82,6,16.17,16.17,0,0,1-2.5,5.23,12.79,12.79,0,0,1-4.2,3.7,12.18,12.18,0,0,1-6,1.39,9.81,9.81,0,0,1-2.14-.24,8.38,8.38,0,0,1-2-.72,6.64,6.64,0,0,1-1.68-1.22,4.93,4.93,0,0,1-1.13-1.75h-.14l-2.59,12H312l7.1-33.5Zm1.3,5.5a8.75,8.75,0,0,0-2.33,2.62,12.67,12.67,0,0,0-1.39,3.43,14.4,14.4,0,0,0-.46,3.43,6,6,0,0,0,1.2,3.91,4.5,4.5,0,0,0,3.7,1.46,5.58,5.58,0,0,0,3.36-1,8.38,8.38,0,0,0,2.3-2.54,11.93,11.93,0,0,0,1.34-3.36,15,15,0,0,0,.43-3.46,7.11,7.11,0,0,0-.31-2.11,5.25,5.25,0,0,0-.91-1.75,4.52,4.52,0,0,0-1.51-1.2,4.67,4.67,0,0,0-2.11-.46A5.41,5.41,0,0,0,327,247.83Z"/>
+
+                    <path class="objs3-env-8 env-paper"
+                          d="M344.6,251.14a14.82,14.82,0,0,1,2.83-4.92,13.32,13.32,0,0,1,4.49-3.34,14,14,0,0,1,6-1.22,16,16,0,0,1,4.68.65,10.22,10.22,0,0,1,3.67,1.94,8.64,8.64,0,0,1,2.38,3.26,11.82,11.82,0,0,1,.84,4.66,18.67,18.67,0,0,1-1,6.12,14.54,14.54,0,0,1-2.86,5,13.24,13.24,0,0,1-4.54,3.31,14.64,14.64,0,0,1-6.07,1.2,12.26,12.26,0,0,1-8.28-2.66q-3.1-2.66-3.1-8A17.93,17.93,0,0,1,344.6,251.14Zm6.14,8.09a5.22,5.22,0,0,0,.94,1.78,4.6,4.6,0,0,0,1.54,1.22,4.65,4.65,0,0,0,2.11.46,5.3,5.3,0,0,0,3.29-1,8.43,8.43,0,0,0,2.26-2.59,12.74,12.74,0,0,0,1.32-3.38,14.83,14.83,0,0,0,.43-3.41,6.44,6.44,0,0,0-1.13-4,4.56,4.56,0,0,0-3.86-1.49,5.23,5.23,0,0,0-3.24,1,8.23,8.23,0,0,0-2.23,2.57,12.91,12.91,0,0,0-1.3,3.34,14.58,14.58,0,0,0-.43,3.38A7.07,7.07,0,0,0,350.74,259.23Z"/>
+
+                    <path class="objs3-env-8 env-paper"
+                          d="M381.77,242.33l-.77,3.46h.1a10.6,10.6,0,0,1,8.69-4.13q7.25,0,7.25,6.67a6.42,6.42,0,0,1-.1,1q-.1.6-.22,1.22t-.24,1.18q-.12.55-.17.89l-3.07,14.54h-6.82l3-14.54q.1-.58.26-1.54a9.34,9.34,0,0,0,.17-1.49,2.15,2.15,0,0,0-1-1.82,3.82,3.82,0,0,0-2.23-.72,5.88,5.88,0,0,0-2.71.6,6.68,6.68,0,0,0-2,1.56,8.6,8.6,0,0,0-1.39,2.21,13.5,13.5,0,0,0-.84,2.54l-2.78,13.2h-6.77l5.14-24.82Z"/>
+                    <rect class="objs3-env-9 env-paper" x="241.77" y="0.44" width="10.07" height="57.33"/>
+                    <rect class="objs3-env-9 env-paper" x="390.27" y="0.44" width="10.07" height="57.33"/>
+                    <rect class="objs3-env-9 env-paper" x="384.27" y="0.44" width="1.93" height="57.33"/>
+                    <rect class="objs3-env-9 env-paper" x="360.44" y="0.44" width="17.91" height="57.33"/>
+                    <rect class="objs3-env-9 env-paper" x="272.26" y="0.44" width="17.91" height="57.33"/>
+                    <rect class="objs3-env-9 env-paper" x="347.73" y="0.44" width="8.95" height="57.33"/>
+                    <rect class="objs3-env-9 env-paper" x="306.04" y="0.44" width="17.79" height="57.33"/>
+                    <rect class="objs3-env-9 env-paper" x="293.4" y="0.44" width="3.68" height="57.33"/>
+                    <rect class="objs3-env-9 env-paper" x="265.34" y="0.44" width="3.68" height="57.33"/>
+
+                </g>
+
+                <polygon class="objs3-env-3" points="619.13 558.42 20 558.42 20 558.42 619.13 167.95 619.13 558.42"/>
+                <image class="objs3-env-4 env-over" width="2747" height="1877"
+                       transform="translate(0 137.95) scale(0.24)"/>
+                <polygon class="objs3-env-5 env-over" points="20 167.95 619.13 558.42 20 558.42 20 167.95"/>
+
+
+            </svg>
+
+        </div>
+        <div class="scn4">
+            <svg class="inject-me objs4-spcship-wrapper" viewBox="0 0 376.99 621.77">
+                <defs>
+                    <clipPath id="clip-path">
+                        <circle class="objs4-spaceship-1" cx="189.23" cy="308.98" r="64.5"/>
+                    </clipPath>
+                </defs>
+                <g id="레이어_2" data-name="레이어 2">
+                    <g id="레이어_1-2" data-name="레이어 1">
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="607.51" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="606.35" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="605.18" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="604.02" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="602.86" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="601.69" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="600.53" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="599.37" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="598.2" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="597.04" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="595.88" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="594.71" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="593.55" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="592.39" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="591.22" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="590.06" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="588.9" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="587.73" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="586.57" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="585.4" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="584.24" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="583.08" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="581.91" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="580.75" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="579.59" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="578.42" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="577.26" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="576.1" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="574.93" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="573.77" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="572.61" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="571.44" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="570.28" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="569.12" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="567.95" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="566.79" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="565.62" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="564.46" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="563.3" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="562.13" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="560.97" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="559.81" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="558.64" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="557.48" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="556.32" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="555.15" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="553.99" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="552.83" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="551.66" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="550.5" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="549.34" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="548.17" rx="61.78" ry="14.26"/>
+                        <ellipse class="objs4-spaceship-3" cx="351.37" cy="300.41" rx="25.62" ry="73.06"/>
+                        <ellipse class="objs4-spaceship-3" cx="25.62" cy="300.41" rx="25.62" ry="73.06"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="548.6" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="548.34" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="548.08" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="547.82" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="547.55" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="547.29" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="547.03" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="546.76" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="546.5" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="546.24" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="545.98" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="545.71" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="545.45" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="545.19" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="544.93" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="544.66" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="544.4" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="544.14" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="543.88" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="543.61" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="543.35" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="543.09" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="542.82" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="542.56" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="542.3" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="542.04" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="541.77" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="541.51" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="541.25" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="540.99" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="540.72" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="540.46" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="540.2" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="539.94" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="539.67" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="539.41" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="539.15" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="538.88" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="538.62" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="538.36" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="538.1" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="537.83" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="537.57" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="537.31" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="537.05" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="536.78" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="536.52" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="536.26" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="536" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="535.73" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="535.47" rx="67.04" ry="13.4"/>
+                        <ellipse class="objs4-spaceship-3" cx="189.23" cy="535.21" rx="67.04" ry="13.4"/>
+                        <path class="objs4-spaceship-4"
+                              d="M303.12,99.83h0L199.53,6.72h0l-5.31-4.8a7.44,7.44,0,0,0-10,0l-5.31,4.8h0S73.27,101.36,71.28,103.46h0A129.4,129.4,0,0,0,30,198.39v220.4A129.81,129.81,0,0,0,159.79,548.6h58.88A129.81,129.81,0,0,0,348.49,418.79V198.39A129.49,129.49,0,0,0,303.12,99.83Z"/>
+                        <rect class="objs4-spaceship-3" x="178.07" y="425.81" width="22.33" height="173.38"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="327.91" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="327.17" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="326.42" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="325.68" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="324.94" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="324.2" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="323.45" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="322.71" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="321.97" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="321.23" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="320.48" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="319.74" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="319" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="318.26" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="317.51" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="316.77" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="316.03" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="315.29" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="314.54" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="313.8" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="313.06" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="312.32" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="311.57" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="310.83" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="310.09" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="309.35" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="308.6" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="307.86" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="307.12" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="306.38" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="305.63" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="304.89" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="304.15" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="303.41" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="302.66" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="301.92" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="301.18" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="300.44" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="299.69" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="298.95" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="298.21" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="297.47" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="296.72" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="295.98" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="295.24" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="294.5" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="293.75" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="293.01" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="292.27" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="291.53" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="290.78" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-2" cx="189.23" cy="290.04" rx="159.26" ry="6.5"/>
+                        <ellipse class="objs4-spaceship-4" cx="189.23" cy="290.04" rx="159.26" ry="6.5"/>
+                        <circle class="objs4-spaceship-3" cx="189.23" cy="308.98" r="86.95"/>
+                        <g class="objs4-spaceship-5">
+                            <rect class="objs4-spaceship-6" x="95.2" y="225.35" width="188.12" height="188.12"/>
+                            <circle class="objs4-spaceship-4" cx="170.29" cy="299.65" r="14.77"/>
+                            <circle class="objs4-spaceship-4" cx="207.43" cy="299.65" r="14.77"/>
+                            <circle class="objs4-spaceship-7" cx="207.43" cy="299.65" r="5.72"/>
+                            <circle class="objs4-spaceship-7" cx="170.29" cy="299.65" r="5.72"/>
+                            <path class="objs4-spaceship-8"
+                                  d="M232.38,296.56h-7.27a17.86,17.86,0,0,0-34.81-1.66,7.33,7.33,0,0,0-.9-.09,7.72,7.72,0,0,0-1.86.17,17.86,17.86,0,0,0-34.84,1.58h-7.27a3.09,3.09,0,0,0,0,6.19h7.27a17.86,17.86,0,0,0,35.38-1.44,2.51,2.51,0,0,1,1.08-.31h0a1.15,1.15,0,0,1,.52.14,17.86,17.86,0,0,0,35.39,1.61h7.27a3.09,3.09,0,1,0,0-6.19Zm-62.09,14.77A11.68,11.68,0,1,1,182,299.66,11.69,11.69,0,0,1,170.29,311.34Zm37.22,0a11.68,11.68,0,1,1,11.68-11.68A11.69,11.69,0,0,1,207.52,311.34Z"/>
+                            <path class="objs4-spaceship-8"
+                                  d="M215.76,339.92h-53a3.77,3.77,0,1,1,0-7.55h53a3.77,3.77,0,1,1,0,7.55Z"/>
+                        </g>
+                        <path class="objs4-spaceship-3"
+                              d="M32.52,444.47C18.95,457.14,0,480.15,0,509.88v87.06H34.39s2.79-58.47,42.44-78.32A129.74,129.74,0,0,1,32.52,444.47Z"/>
+                        <path class="objs4-spaceship-3"
+                              d="M345.7,445.64a129.76,129.76,0,0,1-44.61,73.45c38.77,20.28,41.51,77.85,41.51,77.85H377V509.88C377,481,359.16,458.53,345.7,445.64Z"/>
+                        <path class="objs4-spaceship-9"
+                              d="M189.23,72.55c40.66,0,73.88-2.91,76.22-6.59L199.53,6.72l-5.31-4.8a7.44,7.44,0,0,0-10,0l-5.31,4.8s-35.69,32-66,59.15C114.78,69.59,148.23,72.55,189.23,72.55Z"/>
+                        <path class="objs4-spaceship-3"
+                              d="M290.48,88.46,277.63,76.91c-25.31,5-56,7.71-88.4,7.71S126,81.9,100.7,76.89L87.85,88.43c28,6.58,63.68,10.19,101.38,10.19S262.49,95,290.48,88.46Z"/>
+                        <path class="objs4-spaceship-10"
+                              d="M189.23,49.87a468.42,468.42,0,0,1-55-3.12L120.59,59a469.47,469.47,0,0,0,68.64,4.84A469.68,469.68,0,0,0,257.75,59L244.08,46.76A468.6,468.6,0,0,1,189.23,49.87Z"/>
+                        <path class="objs4-spaceship-10"
+                              d="M232.32,36.19l-14.44-13c-9.32.54-18.9.82-28.65.82s-19.37-.28-28.7-.82l-14.48,13c14,1.23,28.63,1.85,43.18,1.85S218.31,37.41,232.32,36.19Z"/>
+                    </g>
+                </g>
+            </svg>
+
+        </div>
+
+
+    </div>
+
+    <svg class="inject-me objs4-smk-ctrl" viewBox="0 0 700 196.83">
+        <defs>
+            <style>.objs4-smk {
+                fill: #f4f4f4;
+            }</style>
+        </defs>
+
+        <path id="objs4-smk-step1" class="objs4-smk"
+              d="M426.16,27a57,57,0,0,0-20.55,3.83,38.67,38.67,0,0,0-72.37,18.94v23a20.5,20.5,0,0,1-41,0V2.39a264.57,264.57,0,0,0-66.53-.57c0,.17,0,.33,0,.5v70.5a20.5,20.5,0,0,1-41,0V56.11A38.67,38.67,0,0,0,115.06,33c-.31.34-.63.69-.93,1a73.34,73.34,0,1,0,2.41,120.17A38.25,38.25,0,0,0,170.42,153c24.41,9.65,54.18,15.33,86.32,15.33A251.5,251.5,0,0,0,320,160.5a38.28,38.28,0,0,0,68.33-11.83c1.28.1,2.56.16,3.86.16a50.91,50.91,0,0,0,27.31-7.91A57.16,57.16,0,1,0,426.16,27Z"/>
+
+
+        <path id="objs4-smk-step2" class="objs4-smk"
+              d="M292.24,72.82a20.5,20.5,0,0,0,41,0v-23a38.66,38.66,0,0,1,72.37-18.94,57.16,57.16,0,1,1,20.55,110.49,57.68,57.68,0,0,1-6.69-.4,50.91,50.91,0,0,1-27.31,7.91c-1.3,0-2.59-.06-3.86-.16A38.28,38.28,0,0,1,320,160.5a251.5,251.5,0,0,1-63.22,7.83c-32.14,0-61.91-5.67-86.32-15.33a38.25,38.25,0,0,1-53.88,1.23,73.32,73.32,0,1,1-2.41-120.17c.3-.35.62-.7.93-1a38.67,38.67,0,0,1,69.68,23.09V72.82a20.5,20.5,0,0,0,41,0Z"/>
+
+        <path id="objs4-smk-sizectrl" class="objs4-smk"
+              d="M292.58,72.82a20.5,20.5,0,0,0,41,0v-23a38.66,38.66,0,0,1,72.37-18.94A57.16,57.16,0,1,1,426.5,141.32a57.68,57.68,0,0,1-6.69-.4,50.91,50.91,0,0,1-27.31,7.91c-1.3,0-2.59-.06-3.86-.16A38.28,38.28,0,0,1,320.3,160.5a251.5,251.5,0,0,1-63.22,7.83c-32.14,0-61.91-5.67-86.32-15.33a38.25,38.25,0,0,1-53.88,1.23,73.32,73.32,0,1,1-2.41-120.17c.3-.35.62-.7.93-1a38.67,38.67,0,0,1,69.68,23.09V72.82a20.5,20.5,0,0,0,41,0Z"/>
+
+        <path id="objs4-smk-step3" class="objs4-smk"
+              d="M464.94,44.15a50.48,50.48,0,0,0-72.63-9.32,38.1,38.1,0,0,0-68.25,7.86,134,134,0,0,0-22.59-1.92A132.57,132.57,0,0,0,224.83,65,25.43,25.43,0,0,0,183,59.25l-2.88-.74a38.1,38.1,0,0,0-57.73-4A57.18,57.18,0,1,0,91.91,142a31.5,31.5,0,0,0,43.42,16.12,244.73,244.73,0,0,0,33,13.31,245.39,245.39,0,0,0,75.2,11.76c2.84,0,5.66-.06,8.47-.16a31.51,31.51,0,0,0,56.15-8.45,245.24,245.24,0,0,0,98.43-53.31,50.38,50.38,0,0,0,17.63,3.17l.95,0a50.48,50.48,0,0,0,39.79-80.3Z"/>
+
+    </svg>
+</div>
+
+
+<div class="sp_footer">
+    <span>시작하기</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+</head>
+<body>
+<!--<img src="../../resources/images/psd/02_데이터-사용량-상세보기_지난달.png" alt="" class="psd_img">-->
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_left _press">
+            <i class="sprite sprite_common sprite_icon_pre"></i>
+        </a>
+        <span>데이터 자세히 보기</span>
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_right _press"><i class="sprite sprite_common sprite_icon_nav"></i></a>
+    </div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents">
+    <div class="section_contents section_home  section_contents_bottom_btn">
+        <div class="area_date area_date_arrow">
+            <!--disabled 클래스 추가 시 disabled됨-->
+            <a href="#" class="btn_arrow pre _press ">
+                <i class="sprite sprite_common sprite_icon_date_arrow"></i>
+            </a>
+            <span>2017.12 </span>
+            <!--disabled 클래스 추가 시 disabled됨-->
+            <a href="#" class="btn_arrow next _press disabled">
+                <i class="sprite sprite_common sprite_icon_date_arrow"></i>
+            </a>
+        </div>
+        <div class="chart_btn_wrap">
+            <!--disabled 클래스 추가 시 disabled됨-->
+            <a href="#" class="chart_btn _press">
+                <i class="sprite sprite_main sprite_icon_graph"></i>
+            </a>
+        </div>
+        <div class="area_chart_txt">
+            <p class="title">데이터</p>
+            <span>이번 달 남은 데이터량입니다.</span>
+        </div>
+        <div class="area_chart area_data_detail">
+            <div class="pie_chart_wrap">
+                <div class="chart"></div>
+                <div class="chart_txt">
+                    <p class="num_lg">230<span>MB</span></p>
+                    <p class="num_sm">10,000<span>MB</span></p>
+                </div>
+            </div>
+            <div class="chart_desc ">
+                <div class="area_chart_txt">
+                    <p class="title">기본데이터</p>
+                </div>
+                <ul class="clearfix data_list data_list_col_2">
+                    <li class="basic">
+                        <span>기본 데이터</span>
+                        <p><span>50</span>MB</p>
+                        <p class="whole"><span>10,000</span>MB</p>
+                    </li>
+                    <li class="ring">
+                        <span>링</span>
+                        <p><span>300</span>MB</p>
+                        <p class="whole"><span>10,000</span>MB</p>
+                    </li>
+                    <li class="safety">
+                        <span>안심옵션</span>
+                        <p><span>80</span>MB</p>
+                        <p class="whole"><span>10,000</span>MB</p>
+                    </li>
+                    <li class="overcharge">
+                        <span>중량과금</span>
+                        <p><span>800</span>MB</p>
+                        <p class="whole"><span>10,000</span>MB</p>
+                    </li>
+                </ul>
+                <div class="area_chart_txt">
+                    <p class="title">충전/선물</p>
+                </div>
+                <ul class="clearfix data_list data_list_col_2">
+                    <li class="double">
+                        <span>데이터 2배 쿠폰</span>
+                        <p><span>20</span>MB</p>
+                        <p class="whole"><span>10,000</span>MB</p>
+                    </li>
+                    <li class="gift">
+                        <span>선물받은 데이터</span>
+                        <p><span>20</span>MB</p>
+                        <p class="whole"><span>10,000</span>MB</p>
+                    </li>
+                    <li class="family">
+                        <span>가족사랑데이터</span>
+                        <p><span>10</span>MB</p>
+                        <p class="whole"><span>10,000</span>MB</p>
+                    </li>
+                    <li class="gift_card">
+                        <span>데이터상품권</span>
+                        <p><span>20</span>MB</p>
+                        <p class="whole"><span>10,000</span>MB</p>
+                    </li>
+                    <li class="free">
+                        <span>무료데이터</span>
+                        <p><span>10</span>MB</p>
+                        <p class="whole"><span>10,000</span>MB</p>
+                    </li>
+                    <li>
+                        <i class="sprite sprite_main sprite_data_none"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="chart_desc  chart_video">
+                <div class="area_chart_txt">
+                    <p class="title">비디오데이터</p>
+                    <span>U+비디오포털에서만 사용할 수 있는 전용데이터입니다.</span>
+                </div>
+               <div class="area_video_data">
+                   <div class="desc">
+                       <span class="usage"><em>180</em>MB</span>
+                       <span><em>3,000</em>MB</span>
+                   </div>
+                   <div class="area_graph">
+                       <span><em  style="width: 20%"></em></span>
+                   </div>
+               </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section_bottom_btn">
+        <div class="btn_wrap clearfix btn_wrap_col_2">
+            <a href="#" class="btn btn_bottom _press">충전하기</a>
+            <a href="#" class="btn btn_bottom _press">선물하기</a>
+        </div>
+    </div>
+</div>
+<!-- // wrap_contents -->
+
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/lib/highcharts.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+<script>
+    var data = [
+        {
+            y: 1,
+            color: "#92d3cd",
+            name: "basic",
+            borderColor: 'transparent'
+        },
+        {
+            y: 3,
+            color: "#c8c0e8",
+            name: "gift",
+            borderColor: 'transparent'
+        },
+        {
+            y: 0.4,
+            color: "#fac18d",
+            name: "family",
+            borderColor: 'transparent'
+        },
+        {
+            y:0.2,
+            color: "#fdeaa6",
+            name: "gift_card",
+            borderColor: 'transparent'
+        },
+        {
+            y: 0.4,
+            color: "#fdcdd2",
+            name: "double",
+            borderColor: 'transparent'
+        },
+        {
+            y: 40,
+            color: "#e0e0e0",
+            name: "whole",
+            borderColor: 'transparent'
+        }
+
+    ];
+
+    var initChart = function () {
+        $('.chart').highcharts({
+            chart: {
+                animation: false,
+                type: 'pie',
+                backgroundColor: null
+            },
+            title: {
+                text: null
+            },
+            credits: {
+                enabled: false
+            },
+            tooltip: {
+                enabled: false
+            },
+            plotOptions: {
+                pie: {
+                    shadow: false,
+                    center: ['50%', '50%'],
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    }
+                }
+            },
+            series: [{
+                name: 'data',
+                data: data,
+                size: '92%',
+                innerSize: '75%',
+                animation: {
+                    duration: 2000
+                }
+            }]
+        });
+    };
+
+    initChart();
+</script>
+</body>
+</html>

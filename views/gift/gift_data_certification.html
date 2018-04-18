@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+    <style>
+        svg{
+            width:100vw;
+            position:absolute;
+            top:-19vh;
+        }
+    </style>
+</head>
+<body>
+
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_left _press"><i class="sprite sprite_common sprite_icon_pre"></i>
+        </a>
+        <span>데이터 상품권 선물하기</span>
+    </div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents wrap_main">
+    <div class="section_contents section_contents_bottom_btn bg_brown">
+        <div class="area_num">
+            <p>
+                <em>받는 사람 </em><span>010-2000-2030</span>
+            </p>
+        </div>
+        <div class="area_gift_volume">
+            <!-- <img src="../../resources/images/img_gift_box.png" alt=""> -->
+            <div class="txt">
+                <p>선물용량</p>
+                <span>100 <em>MB</em> </span>
+            </div>
+        </div>
+        <div class="area_coupon">
+            <p class="list_title">데이터 상품권 선택</p>
+            <div class="select_list">
+                <ul class="clearfix _dataListSlide">
+                    <li>
+                        <a href="#">
+                            <!--데이터 쿠폰-->
+                            <span class="label_coupon">1+1</span>
+                            <!--데이터 쿠폰-->
+                            <div class="left">
+                                <p class="title">U+ 데이터 쿠폰</p>
+                                <div class="num">
+                                    <p>100MB</p>
+                                    <span>선물쿠폰</span>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="period">
+                                    <p>유효기간</p>
+                                    <span>2018.03.11</span>
+                                </div>
+                                <div class="price">
+                                    <p><span>19,000</span>원</p>
+                                    <span>부가세 포함 </span>
+                                </div>
+                            </div>
+                        <div class="mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="left">
+                                <p class="title">U+ 데이터 쿠폰</p>
+                                <div class="num">
+                                    <p>100MB</p>
+                                    <span>충전쿠폰</span>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="period">
+                                    <p>유효기간</p>
+                                    <span>2018.03.11</span>
+                                </div>
+                                <div class="price">
+                                    <p>19,000<span>원</span></p>
+                                    <span>부가세 포함 </span>
+                                </div>
+                            </div>
+                        <div class="mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="left">
+                                <p class="title">U+ 데이터 쿠폰</p>
+                                <div class="num">
+                                    <p>100MB</p>
+                                    <span>충전쿠폰</span>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="period">
+                                    <p>유효기간</p>
+                                    <span>2018.03.11</span>
+                                </div>
+                                <div class="price">
+                                    <p>19,000<span>원</span></p>
+                                    <span>부가세 포함 </span>
+                                </div>
+                            </div>
+                            <div class="mask"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="data_slide_pager">
+                    <span data-slide-index="0"></span>
+                    <span data-slide-index="1"></span>
+                    <span data-slide-index="2"></span>
+                </div>
+            </div>
+            <div class="method_list _methodList">
+                <p class="list_title">결제방법 선택</p>
+                <div class="radio_box _press">
+                    <input type="radio" id="radio1" class="radio_btn" name="1" checked>
+                    <label for="radio1">U+ 청구서 결제</label>
+                </div>
+                <div class="radio_box _press">
+                    <input type="radio" id="radio2" class="radio_btn" name="1">
+                    <label for="radio2">다른 결제 수단</label>
+                </div>
+                <ul class="clearfix">
+                    <li>
+                        <!--disabled 클래스 추가 시 disabled됨 / 선택시 selected 추가-->
+                        <a href="#" class="_press">
+                            <i class="sprite sprite_charge sprite_icon_mobile"></i>
+                            <span>휴대폰소액결제</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!--disabled 클래스 추가 시 disabled됨 / 선택시 selected 추가-->
+                        <a href="#" class="_press">
+                            <i class="sprite sprite_charge sprite_icon_card"></i>
+                            <span>신용카드</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!--disabled 클래스 추가 시 disabled됨 / 선택시 selected 추가-->
+                        <a href="#" class="_press">
+                            <i class="sprite sprite_charge sprite_icon_pay"></i>
+                            <span>계좌이체</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!--disabled 클래스 추가 시 disabled됨 / 선택시 selected 추가-->
+                        <a href="#" class="_press">
+                            <i class="sprite sprite_charge sprite_icon_book"></i>
+                            <span>도서상품권
+                                 <em>(북앤라이프)</em>
+                                </span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <!--disabled 클래스 추가 시 disabled됨 / 선택시 selected 추가-->
+                        <a href="#" class=" disabled">
+                            <i class="sprite sprite_charge sprite_icon_culture"></i>
+                            <span>문화상품권
+                                <em>(컬쳐랜드)</em></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <!--disabled 클래스 추가 시 disabled됨 / 선택시 selected 추가-->
+                        <a href="#" class="empty">
+                            <i class="sprite sprite_charge sprite_icon_empty"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--disabled 클래스 추가 시 disabled됨-->
+            <a href="#" class="info _press">
+                <i class="sprite sprite_charge sprite_icon_info"></i><span>유의사항</span>
+                <p>내용을 반드시 확인해주세요</p>
+            </a>
+        </div>
+    </div>
+    <div class="section_bottom_btn">
+        <a href="../gift/gift_data_certification_method.html">
+            <div class="btn_wrap">
+                <button class="btn btn_bottom">다음</button>
+            </div>
+
+        </a>
+
+    </div>
+</div>
+<!-- // wrap_contents -->
+
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/lib/jquery.bxslider.min.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+<script src="../../resources/up/libs/SnapSVGAnimator/js/vendor/snap.svg/snap.svg-min.js"></script>
+<script src="../../resources/up/libs/SnapSVGAnimator/js/SnapSVGAnimator.min.js"></script>
+<script type="text/javascript">
+    var jsonfile = "../../resources/up/json/gift.json",
+        fps = 24,
+        width = 1080,
+        height = 500,
+        AJAX_req;
+
+AJAX_JSON_Req(jsonfile);
+
+function handle_AJAX_Complete() {
+    if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
+    {
+        json = JSON.parse(AJAX_req.responseText);
+        comp = new SVGAnim(
+                       json,
+                       width,
+                       height,
+                       fps
+                       );
+
+    }
+}
+
+function AJAX_JSON_Req( url )
+{
+    AJAX_req = new XMLHttpRequest();
+    AJAX_req.open("GET", url, true);
+    AJAX_req.setRequestHeader("Content-type", "application/json");
+
+    AJAX_req.onreadystatechange = handle_AJAX_Complete;
+    AJAX_req.send();
+}
+
+</script>
+
+</body>
+</html>

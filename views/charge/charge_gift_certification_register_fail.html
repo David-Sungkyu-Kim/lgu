@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+    <style>
+    </style>
+</head>
+<body>
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_left _press"><i class="sprite sprite_common sprite_icon_pre"></i>
+        </a>
+        <span>데이터 상품권 등록하기</span>
+    </div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents wrap_main">
+    <div class="section_contents section_contents_bottom_btn bg_brown">
+        <div class="area_data_charge">
+            <!--데이터 매우 많을 경우 great / 많을 경우 good / 데이터 보통일 경우 normal / 데이터 부족할 경우 bad 클래스 추가-->
+            <div class="wrap_area normal clearfix">
+                <div class="area_line_chart">
+                    <div>
+                        <div class="whole">
+                            <div class="whole_inner">
+                            </div>
+                            <div class="usage" style="height: 30%;">
+                                <i class="sprite sprite_main"></i>
+                            </div>
+                        </div>
+                        <span class="data_line" style="bottom:30%"></span>
+                    </div>
+                </div>
+                <div class="area_desc">
+                    <p>현재</p>
+                    <span>4,900 <em>MB</em></span>
+                </div>
+            </div>
+            <!--적용전 data_before클래스 추가-->
+            <div class="wrap_area wrap_data_after good data_before" >
+                <div class="area_line_chart ">
+                    <div>
+                        <div class="whole">
+                            <div class="whole_inner">
+                            </div>
+                            <div class="usage" style="height: 30%;">
+                                <i class="sprite sprite_main"></i>
+                            </div>
+                            <span class="data_line" style="bottom:30%"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="area_desc">
+                    <p>충전 후</p>
+                    <span>? <em>MB</em></span>
+                </div>
+            </div>
+        </div>
+        <div class="area_coupon">
+            <p class="list_title">데이터 상품권 번호 인증</p>
+            <!--인증 성공시 complete 클래스 추가-->
+            <!--인증 실패시 fail 클래스 추가-->
+           <div class="num_certify fail">
+               <p>
+                   등록 불가능한<br>
+                   데이터 상품권
+               </p>
+               <span class="num">
+                   ?<em>MB</em>
+               </span>
+               <div class="right">
+                    <p>인증 실패 횟수</p>
+                   <span><em>1</em>/10</span>
+               </div>
+               <div class="input_area">
+                   <input type="tel" class="text_box" value="123456789101" maxlength="12">
+                   <i class="sprite sprite_charge sprite_icon_fail"></i>
+               </div>
+               <!--disabled 클래스 추가 시 disabled됨-->
+               <a href="#" class="btn_certification _press disabled">인증</a>
+           </div>
+            <p class="desc">
+                * 10회 이상 인증 실패할 경우 72시간 동안<br>
+                   &nbsp;&nbsp; 상품권 등록을 하실 수 없습니다.
+            </p>
+            <!--disabled 클래스 추가 시 disabled됨-->
+            <a href="#" class="info _press">
+                <i class="sprite sprite_charge sprite_icon_info"></i><span>유의사항</span>
+                <p>내용을 반드시 확인해주세요</p>
+            </a>
+        </div>
+    </div>
+    <div class="section_bottom_btn">
+        <div class="btn_wrap">
+            <button class="btn btn_bottom">등록하기</button>
+        </div>
+    </div>
+</div>
+<!-- // wrap_contents -->
+
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/lib/jquery.bxslider.min.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+</body>
+</html>

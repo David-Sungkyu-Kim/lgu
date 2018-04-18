@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+    <style>
+    </style>
+</head>
+<body>
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">
+        <!--disabled 클래스 추가 시 disabled됨-->
+        <a href="#" class="header_btn header_btn_left _press"><i class="sprite sprite_common sprite_icon_pre"></i>
+        </a>
+        <span>데이터 상품권 선물하기</span>
+    </div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents wrap_main ">
+    <div class="section_contents section_gift">
+        <div class="area_list_desc desc_lg">
+            <p>
+                상품권 전달방법을 <br>
+                선택해주세요
+            </p>
+        </div>
+        <div class="area_gift_method_list ">
+            <ul class="clearfix _methodList">
+                <li>
+                    <a href="#" class="selected">
+                        <i class="sprite sprite_charge sprite_icon_envelope"></i>
+                        <div class="txt">
+                            <p>
+                                받는 사람 번호로 <br>
+                                바로 충전하기
+                            </p>
+                        </div>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="sprite sprite_charge sprite_icon_massage"></i>
+                        <div class="txt">
+                            <p>
+                                문자로 상품권 번호<br>
+                                전달하기
+                            </p>
+                            <span>
+                            * 받는 사람이 직접 번호 <br>
+                            등록해야합니다.
+                        </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!--예약 발송 시간이 설정된 경우 time_setting클래스 추가-->
+            <div class="reserve_check time_setting">
+                <input type="checkbox" class="check_box check_box_sm" id="check_box1" checked>
+                <label for="check_box1">예약발송하기</label>
+                <p>2018.03.21 13:00</p>
+            </div>
+            <div class="btn_wrap">
+                <a href="../demo/certi.html">
+                    <button class="btn btn_round btn_md btn_bottom _press">선물하기</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // wrap_contents -->
+
+<script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../resources/js/ui/ui.common.js"></script>
+</body>
+</html>

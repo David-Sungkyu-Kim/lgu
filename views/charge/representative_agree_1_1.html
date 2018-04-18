@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ui/style.css"/>
+    <style>
+    </style>
+</head>
+<body>
+<!-- wrap_header -->
+<div class="wrap_header">
+    <div class="section_header">
+        <a href="#" class="header_btn header_btn_left"><i class="sprite sprite_common sprite_icon_pre"></i>
+        </a>
+        <span>법정 대리인 동의하기</span>
+    </div>
+</div>
+<!-- // wrap_header -->
+
+<!-- wrap_contents -->
+<div class="wrap_contents">
+    <div class="section_contents section_contents_bottom_btn">
+        <div class="area_num area_num_left">
+            <p>
+                <em>내 휴대폰</em><span>010-**34-**34</span>
+            </p>
+        </div>
+        <div class="area_insert">
+            <p class="info_title">SMS 인증</p>
+            <p class="info_desc">법정대리인의 정보를 입력해주세요.</p>
+            <div class="info_list">
+                <div class="input_field">
+                    <div class="place_holder_box _textPlaceholder">
+                        <input type="text" class="text_box">
+                        <p class="place_holder"><i class="sprite sprite_charge sprite_icon_name"></i>성명</p>
+                    </div>
+                </div>
+                <div class="input_field">
+                    <div class="place_holder_box _textPlaceholder">
+                        <input type="text" class="text_box">
+                        <p class="place_holder"><i class="sprite sprite_charge sprite_icon_birth"></i>생년월일</p>
+                    </div>
+                </div>
+                <div class="input_field input_field_btn">
+                    <div class="place_holder_box  _textPlaceholder">
+                        <input type="tel" class="text_box">
+                        <p class="place_holder"><i class="sprite sprite_charge sprite_icon_phone"></i>휴대폰번호 입력</p>
+                    </div>
+                    <a href="#" class="btn btn_white btn_round _press">인증번호 받기</a>
+                </div>
+                <!--인증하기 누른 후 limit_time_show 클래스 추가시 제한시간 보임-->
+                <!--인증하기 누른 후 correct_message_show 클래스 추가시 성공메시지 보임 error_message_show/ 추가시 에러메세지 보임-->
+                <div class="input_field input_field_btn  _confirmBtn">
+                    <div class="place_holder_box  _textPlaceholder">
+                        <input type="tel" class="text_box">
+                        <p class="place_holder"><i class="sprite sprite_charge sprite_icon_security"></i>인증번호 입력</p>
+                    </div>
+                    <a href="#" class="btn btn_white btn_round _press">인증하기</a>
+                    <span class="limit_time"><i class="sprite sprite_charge sprite_icon_clock_red"></i>02:23</span>
+                    <a href="#" class="btn btn_white btn_round _press">인증하기</a>
+                    <p class="message correct">올바른 인증번호 입니다.</p>
+                    <p class="message error">잘못된 인증번호입니다.</p>
+                </div>
+                <!--disabled 클래스 추가 시 disabled됨-->
+                <div class="info _press">
+                    <i class="sprite sprite_charge sprite_icon_info_dark"></i><span>유의사항</span>
+                    <a href="#" class="_press">내용을 반드시 확인해주세요</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_bottom_btn">
+            <div class="btn_wrap">
+                <!-- a링크 버튼 :  disabled 시 disabled 클래스 추가 -->
+                <a href="#" class="btn btn_bottom _press disabled">확인</a>
+            </div>
+        </div>
+    </div>
+    <!-- // wrap_contents -->
+
+    <script src="../../resources/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="../../resources/js/ui/ui.common.js"></script>
+</body>
+</html>

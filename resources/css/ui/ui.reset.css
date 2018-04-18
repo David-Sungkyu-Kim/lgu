@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/**
+ * Reset
+ * 작성자 : 박지원
+ */
+
+/* common style */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    font-family: "NotoSans","HelveticaNeue-Light", "AppleSDGothicNeo-Light", "sans-serif";
+    font-size: 1.4rem;
+    line-height: 1.6em;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, q, s, samp, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+caption, legend {
+    position: absolute;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+select, input {
+    vertical-align: middle;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+label{
+    vertical-align: middle;
+}
+input::-ms-clear {
+    display: none;
+}
+
+
+input[type="text"] {
+    -webkit-appearance: none;
+}
+input[type="text"]:focus {
+
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+hr {
+    display: none;
+    border: 0 none;
+}
+
+ol, ul, ol li, ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+em {
+    font-style: normal;
+}
+
+menu li {
+    list-style: none;
+}
+
+button {
+    overflow: visible;
+    outline: 0
+}
+
+span {
+    outline: 0
+}
+
+p {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+    color: #5d5d5d;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    outline: 0 none;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    font-weight: normal;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both !important;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
